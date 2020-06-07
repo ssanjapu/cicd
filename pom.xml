@@ -28,7 +28,7 @@
 				<configuration>
 				</configuration>
 			</plugin>
-			<!-- <plugin>
+			<plugin>
                <groupId>org.mule.tools.maven</groupId>
                <artifactId>mule-maven-plugin</artifactId>
                <version>${mule.maven-plugin.version}</version>
@@ -36,9 +36,9 @@
     <cloudHubDeployment>
       <uri>https://anypoint.mulesoft.com/</uri>
       <muleVersion>app.runtime</muleVersion>
-      <username>sanjayshiva999</username>
+      <username>mule-test1</username>
       <password>$@nJapu_999</password>
-      <applicationName>abc</applicationName>
+      <applicationName>cicdtest</applicationName>
       <environment>Sandbox</environment>
 	  <region></region> 
 	  <workers>1</workers>
@@ -54,7 +54,7 @@
     </goals>
   </execution>
 </executions>
-</plugin>	 -->	
+</plugin>
 </plugins>
 </build>
 	<dependencies>
