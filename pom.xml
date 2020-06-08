@@ -40,7 +40,6 @@
       <password>$@nJapu_999</password>
       <applicationName>cicdtest</applicationName>
       <environment>Sandbox</environment>
-	  <region></region> 
 	  <workers>1</workers>
       <workerType>Micro</workerType>
 </cloudHubDeployment>
