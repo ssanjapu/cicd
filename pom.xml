@@ -15,31 +15,25 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.2.2</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.6.3</mule.maven.plugin.version>
 	</properties>
 
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
-			<plugin>
-               <groupId>org.mule.tools.maven</groupId>
-               <artifactId>mule-maven-plugin</artifactId>
-               <version>${mule.maven-plugin.version}</version>
-             <configuration>
-    <cloudHubDeployment>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>mule-maven-plugin</artifactId>
+  <version>3.6.3</version>
+  <extensions>true</extensions>
+<configuration>
+<cloudHubDeployment>
       <uri>https://anypoint.mulesoft.com/</uri>
       <muleVersion>app.runtime</muleVersion>
       <username>mule-test1</username>
       <password>$@nJapu_999</password>
       <applicationName>cicdtest</applicationName>
       <environment>Sandbox</environment>
+	  <!-- <region></region>  -->
 	  <workers>1</workers>
       <workerType>Micro</workerType>
 </cloudHubDeployment>
@@ -96,5 +90,4 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
 </project>
